@@ -1,0 +1,36 @@
+<%- include('partials/header'); -%>
+
+<div class="container container-port">
+  <div class="title about">
+    <div class="title-box"></div>
+    <div class="title-text">Portfolio</div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="portfolio">
+    <div class="row">
+      <% for(var i = 0; i < images.length; i++) { %>
+        <% if(i%5 === 0 || i%5 === 1 || i%5 === 2) { %>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="image-one">
+              <a href="<%= images[i] %>" data-lightbox="gallary">
+                <img src="<%= images[i] %>" alt="image">
+              </a>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <div class="image-two">
+              <a href="<%= images[i] %>" data-lightbox="gallary">
+                <img src="<%= images[i] %>" alt="image">
+              </a>
+            </div>
+          </div>
+        <% } %>
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer'); -%>
