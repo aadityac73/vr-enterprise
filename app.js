@@ -21,6 +21,72 @@ const images = ["https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib
   "https://images.unsplash.com/photo-1499955085172-a104c9463ece?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"  
 ];
 
+var clients= [
+  {
+    name: "Rare Rabbit",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608131/assets/logos/rare_rabbit_wijkho.png",
+    images: [
+              "https://res.cloudinary.com/aadityac73/image/upload/v1605512889/assets/images/rr1_obesqn.png",
+              "https://res.cloudinary.com/aadityac73/image/upload/v1605512889/assets/images/rr2_xo2oo4.png",
+              "https://res.cloudinary.com/aadityac73/image/upload/v1605512889/assets/images/rr3_arj1ux.png"
+            ]
+  },
+  {
+    name: "Ujjivan Finance Bank",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608132/assets/logos/bank_logo_srelir.jpg",
+  },
+  {
+    name: "IIFL",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608133/assets/logos/IIFL_wnlf3k.jpg",
+    images: []
+  },
+  {
+    name: "Muthoot Finance",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608131/assets/logos/Muthoot_Finance_fchx6t.png",
+    images: []
+  },
+  {
+    name: "Huawei",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608134/assets/logos/huawei_b9bfce.png",
+    images: []
+  },
+  {
+    name: "Allied Design Associates",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608132/assets/logos/ada_unev1u.jpg",
+    images: []
+  },
+  {
+    name: "FIS",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608132/assets/logos/fis_ty5yyc.png",
+    images: []
+  },
+  {
+    name: "Korum Mall",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608131/assets/logos/korum_vjqmm0.png",
+    images: []
+  },
+  {
+    name: "Kailash Parbat Restaurant",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608133/assets/logos/kailash-parbat_xyxaqy.jpg",
+    images: []
+  },
+  {
+    name: "Pernod Ricard",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608131/assets/logos/Pernod-Ricard_edfawl.png",
+    images: []
+  },
+  {
+    name: "Royal Stag",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608131/assets/logos/royal-stag_2_hypi1j.jpg",
+    images: []
+  },
+  {
+    name: "Blenders Pride",
+    logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608132/assets/logos/bleders_logo_lmngxg.jpg",
+    images: []
+  },
+];
+
 app.get("/", (req, res) => {
   res.render("index");
 });
@@ -35,6 +101,10 @@ app.get("/services", (req, res) => {
 
 app.get("/portfolio", (req, res) => {
   res.render("portfolio", {images: images});
+});
+
+app.get("/clientele", (req, res) => {
+  res.render("clientele", {clients: clients});
 });
 
 app.listen(3000, () => {

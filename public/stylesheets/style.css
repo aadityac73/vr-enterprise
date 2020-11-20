@@ -25,6 +25,7 @@
 
 .navbar .content .logo {
 	position: absolute;
+	top: 0;
 	left: 130px;
 	padding: 16px 9px 25px 9px;
 	z-index: 1;
@@ -46,6 +47,7 @@
 	right: 0;
 	left: 253px;
 	display: flex;
+	margin-bottom: 0;
 	justify-content: flex-end;
 	background-color: #4ba414;
 }
@@ -53,10 +55,12 @@
 .navbar .content .menu-list li {
 	list-style: none;
 	margin-right: 2vw;
-	padding: 12px 8px 12px 8px;
+	padding: 0 8px 0 8px;
 }
 
 .navbar .content .menu-list li a {
+	display: inline-block;
+	padding: 13px 0 14px 0;
 	text-decoration: none;
 	color: #fff;
 	font-size: 12px;
@@ -110,22 +114,32 @@ footer {
 	margin: 0 0 2px 0;
 }
 
+.main-content p.phone {
+	font-size: 16px;
+}
+
 .main-content .social {
 	margin: 25px 0 7px;
 	transition: all 0.3s ease-in;
 }
 
 .main-content .social span:hover {
-	color: #e1e1e1;
+	opacity: 0.5;
+	transform: translateY(-1px);
 }
 
 .main-content .social span {
-	font-size: 20px;
+	transition: all 0.5s ease;
+	padding: 3px;
+	font-size: 23px;
+}
+
+footer hr {
+	margin-bottom: 0;
 }
 
 footer .bottom {
-	margin: 7px 0 0 0;
-	padding: 0 0 7px 0;
+	padding: 7px 0 7px 0;
 }
 
 /* home page styles */
@@ -413,6 +427,246 @@ footer .bottom {
 	transition: all 0.3s;
 }
 
+/* Services page styling */
+
+.service {
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.service .col-lg-6,
+.service .col-md-6 {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.service-img {
+	position: relative;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+}
+
+.service-img.one {
+	background: url(https://images.unsplash.com/photo-1507086182422-97bd7ca2413b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80)
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-img.two {
+	background: url(https://images.unsplash.com/photo-1595846936289-91371459c5bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-img.three {
+	background: url(https://images.unsplash.com/photo-1596729265256-65efcec497bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-img.four {
+	background: url(https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80)
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-img.five {
+	background: url(https://images.unsplash.com/photo-1520772624093-23a49d9aad17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-img.six {
+	background: url(https://images.unsplash.com/photo-1551610524-6593c5e2c6fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-img.seven {
+	background: url(https://mail.google.com/mail/u/1?ui=2&ik=0eea2819a0&attid=0.5&permmsgid=msg-f:1680989459815387295&th=17541301e778d09f&view=fimg&realattid=175412f4ee0324ce6078&disp=thd&attbid=ANGjdJ9mHeTu7OOKaihmmO6szPEnDbLwLfmE1gK3RbYvzGax-x8-HSwLbjgBPe_ghIVAcPQ_ZRp_v2yL0-T11_cueq1kHZzAOAjQkK2IVB0YpdOw6adlPpj3eAmaHhM&ats=2524608000000&sz=w1024-h667)
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-img.eight {
+	background: url(https://4.imimg.com/data4/NK/JW/MY-11658092/clean-room-partition-and-hvac-500x500.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-img.nine {
+	background: url(https://images.unsplash.com/photo-1563724718319-78dc40028132?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80)
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-img.ten {
+	background: url(https://mail.google.com/mail/u/1?ui=2&ik=0eea2819a0&attid=0.6&permmsgid=msg-f:1680989207982349125&th=175412c7450d9b45&view=fimg&realattid=175412c1169d373b7a81&disp=thd&attbid=ANGjdJ92q50KTfsIGKrk2dUfhQba03qCaVeUdKBTf4Ohe3IZY3ZKqc_EL_47H_KsEuVNVvgh86clfd4K3H7oopKG7AXURIhH2VvaH8O4l8pIIn057R22Q8NECv124BA&ats=2524608000000&sz=w1024-h667)
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.service-img:hover {
+	cursor: pointer;
+}
+
+.service-img .box {
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+}
+
+.service-img.one .box {
+	background-color: #cc3535;
+}
+
+.service-img.two .box {
+	background-color: #82d96c;
+}
+
+.service-img.three .box {
+	background-color: #c3b42a;
+}
+
+.service-img.four .box {
+	background-color: #1f5bb6;
+}
+
+.service-img.five .box {
+	background-color: #e747c3;
+}
+
+.service-img.six .box {
+	background-color: #cc3535;
+}
+
+.service-img.seven .box {
+	background-color: #36c8f5;
+}
+
+.service-img.eight .box {
+	background-color: #0fff35;
+}
+
+.service-img.nine .box {
+	background-color: #1f5bb6;
+}
+
+.service-img.ten .box {
+	background-color: #221b19;
+}
+
+.service-img .text {
+	font-family: 'Saira', sans-serif;
+	font-weight: 600;
+	position: absolute;
+	font-size: 1.3em;
+	top: 130px;
+	right: 0;
+	left: 0;
+	width: fit-content;
+	margin: auto;
+	color: #fff;
+	z-index: 1;
+	transition: all 0.4s ease-in;
+}
+
+.service-img.hover .text {
+	font-family: 'Saira', sans-serif;
+	font-weight: 600;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	left: 0;
+	width: fit-content;
+	margin: auto;
+	color: #fff;
+	z-index: 1;
+}
+
+.service-img .desc {
+	position: absolute;
+	width: 360px;
+	left: 0;
+	right: 0;
+	top: 350px;
+	text-align: justify;
+	margin: auto;
+	color: #fff;
+	font-size: 1.01em;
+}
+
+.service-img.hover .desc {
+	animation: slideIn .5s linear;
+	top: 80px;
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(360px);
+		opacity: 0;
+		width: 60px;
+	}
+	20% {
+		transform: translateY(300px);
+		opacity: 0.2;
+		width: 120px;
+	}
+	40% {
+		transform: translateY(240px);
+		opacity: 0.4;
+		width: 180px;
+	}
+	60% {
+		transform: translateY(180px);
+		opacity: 0.6;
+		width: 240px;
+	}
+	80% {
+		transform: translateY(100px);
+		opacity: 0.8;
+		width: 300px;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+		width: 360px;
+	}
+}
+
+.clientele {
+	padding: 25px 50px 50px 50px;
+}
+
+.clientele .logo {
+	width: 185px;
+	height: 185px;
+	margin: 0 auto 0 auto;
+	transition: all 0.2s ease-in;
+}
+
+.clientele .logo:hover {
+	box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+	transform: translateY(-10px);
+}
+
+.clientele .logo img {
+	width: 100%;
+	padding: 20px;
+	height: 100%;
+}
+
+.clientele .name {
+	display: none;
+	color: navy;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: .9em;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
 @media (max-width: 891px) {
 	body.disabled {
 		overflow: hidden;
@@ -484,7 +738,7 @@ footer .bottom {
 		background-color: #4ba414;
 		left: calc(50vw + 70px);
 		right: 0;
-		padding: 12px 0 12px calc(50vw - 120px);
+		padding: 10px 0 10px calc(50vw - 120px);
 	}
 	.navbar .content .logo {
 		position: absolute;
@@ -515,6 +769,25 @@ footer .bottom {
 	}
 	.center .my-content .place .next {
 		margin-left: 60px;
+	}
+
+	.service-img {
+		position: relative;
+		width: 100%;
+		height: 280px;
+		background: url(https://images.unsplash.com/photo-1595846936289-91371459c5bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	.service-img .desc {
+		font-size: .9em;
+	}
+
+	.service-img.hover .desc {
+		font-size: .9em;
 	}
 }
 
@@ -563,5 +836,50 @@ footer .bottom {
 	.portfolio .image-one,
 	.portfolio .image-two {
 		padding: 0 18px 0 18px;
+	}
+
+	.service {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.service .col-12 {
+		padding: 0 15px 0 15px;
+	}
+
+	.service-img {
+		position: relative;
+		width: 100%;
+		height: 250px;
+		background: url(https://images.unsplash.com/photo-1595846936289-91371459c5bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	.service-img .text {
+		top: 100px;
+	}
+
+	.service-img .text#hvac {
+		font-size: 1.2em;
+	}
+
+	.service-img .desc {
+		font-size: .8em;
+		width: 320px;
+	}
+
+	.service-img.hover .desc {
+		top: 60px;
+		font-size: .8em;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.service .col-sm-12 {
+		padding: 0 20px 0 20px;
+		margin-bottom: 30px;
 	}
 }

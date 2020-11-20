@@ -1,0 +1,35 @@
+<%- include('partials/header'); -%>
+
+<div class="container container-port">
+  <div class="title about">
+    <div class="title-box"></div>
+    <div class="title-text">Clientele</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row clientele">
+    <% for(var i=0; i < clients.length; i++) { %>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <% if(clients[i].images && clients[i].images.length > 0) { %>
+          <a href="<%= clients[i].images[0] %>" data-lightbox="<%= clients[i].name %>" data-title="<%= clients[i].name %>">
+            <div class="logo">
+              <img src="<%= clients[i].logo %>" alt="<%= clients[i].name %>">
+            </div>
+          </a>
+          <p class="text-center name"><%= clients[i].name %></p>
+          <% for(var j=1; j < clients[i].images.length; j++) { %>
+            <a href="<%= clients[i].images[j] %>" data-lightbox="<%= clients[i].name %>" data-title="<%= clients[i].name %>"></a>
+          <% } %>
+        <% } else { %>
+          <div class="logo">
+            <img src="<%= clients[i].logo %>" alt="<%= clients[i].name %>">
+          </div>
+          <p class="text-center name"><%= clients[i].name %></p>
+        <% } %>
+      </div>
+    <% } %>
+  </div>
+</div>
+
+<%- include('partials/footer'); -%>
