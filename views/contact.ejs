@@ -1,0 +1,56 @@
+<%- include('partials/header'); -%>
+
+<div class="container container-port">
+  <div class="title contact1">
+    <div class="title-box"></div>
+    <div class="title-text">Contact Us</div>
+  </div>
+</div>
+
+<div class="contact container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-lg-5 col-md-7 col-sm-8 col-10">
+      <div class="form-custom">
+        <h2 class="form-title text-center">Drop us a line!</h2>
+        <form action="/contact" method="POST">
+          <div class="form-group">
+            <label class="d-block">Name</label>
+            <input name="contact[name]" type="text" autofocus required>
+          </div>
+          <div class="form-group">
+            <label class="d-block">Email</label>
+            <input name="contact[email]" type="email" required>
+          </div>
+          <div class="form-group">
+            <label class="d-block">Phone</label>
+            <input name="contact[phone]" type="number" required>
+          </div>
+          <div class="form-group">
+            <label class="d-block" for="message">Message</label>
+            <textarea name="contact[message]" id="message" required></textarea>
+          </div>
+          <button class="form-btn">Submit</button>
+        </form>
+      </div>
+      <hr>
+      <div class="phone">
+        <p><a title="Mail" href="mailto:info@vr-enterprise.com"><i class="fas fa-envelope"></i> info@vr-enterprise.com</a></p>
+        <p><a title="Call" href="tel:+917506588076"><i class="fas fa-phone-alt"></i> +91 75065 88076</a></p>
+        <p><a title="Call" href="tel:+918097419261"><i class="fas fa-phone-alt"></i> +91 80974 19261</a></p>
+      </div>
+      <hr>
+      <div class="info">
+        <p>You can now find us at our office space!</p>
+        <p class="address"><i class="fas fa-map-marker-alt"></i> 5/D-4 Ekta CHS Mhada Colony,<br> Mulund(E), Mumbai 400 081</p>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.757869862007!2d72.95388311442592!3d19.16207325424181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68e1fab3b172ee05!2sEkta%20Cooperative%20Housing%20Society%20Limited!5e0!3m2!1sen!2sin!4v1605875213898!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+
+</div>
+
+<%- include('partials/footer'); -%>

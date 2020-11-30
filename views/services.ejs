@@ -1,7 +1,7 @@
 <%- include('partials/header'); -%>
 
 <div class="container container-port">
-  <div class="title about">
+  <div class="title services">
     <div class="title-box"></div>
     <div class="title-text">Services</div>
   </div>
@@ -9,112 +9,30 @@
 
 <div class="container-fluid">
   <div class="row service">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <a href="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" data-lightbox="gallary" data-title="Civil and Interior">
-        <div class="service-img one">
-          <div class="box"></div>
-          <h3 class="text">Civil and Interior</h3>
-          <p class="desc">
-            We uniquely offer a 360° fully integrated design service that provides end-to-end solutions, which includes
-            branding, architecture, interiors, civil work, sustainability and security. We have developed a unique client focus
-            that creates and delivers profitable, sustainable and future-ready solutions along with our in-house technical
-            specialists creating spaces that connect with the user both aesthetically and functionally.
-          </p>
+    <% services.forEach(s => { %>
+      <% if(s.images.length > 0) { %>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <a href="<%= s.images[0] %>" data-lightbox="<%= s.class %>" data-title="<%= s.name %>">
+            <div class="service-img <%= s.class %>">
+              <div class="box"></div>
+              <h3 class="text"><%= s.name %></h3>
+              <p class="desc"><%= s.content %></p>
+            </div>
+          </a>
+          <% for(let i=1; i<s.images.length; i++) { %>
+            <a href="<%= s.images[i] %>" data-lightbox="<%= s.class %>" data-title="<%= s.name %>"></a>
+          <% } %>
         </div>
-      </a>
-      <a href="https://images.unsplash.com/photo-1507086182422-97bd7ca2413b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80" data-lightbox="gallary" data-title="Civil and Interior"></a>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <a href="https://images.unsplash.com/photo-1595846723416-99a641e1231a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" data-lightbox="gallary1" data-title="Furniture">
-        <div class="service-img two">
-          <div class="box"></div>
-          <h3 class="text">Furniture</h3>
-          <p class="desc">Our team has specialized furniture designer with heart winning display of abilities with their modern designing.
-            They are head and hand behind giving the service making office furniture ,lobby area, bank furniture ,conference
-            room,dinning room.
-          </p>
+      <% } else { %>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="service-img <%= s.class %>">
+            <div class="box"></div>
+            <h3 class="text"><%= s.name %></h3>
+            <p class="desc"><%= s.content %></p>
+          </div>
         </div>
-      </a>
-      <a href="https://images.unsplash.com/photo-1595846936289-91371459c5bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" data-lightbox="gallary1" data-title="Furniture"></a>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <div class="service-img three">
-        <div class="box"></div>
-        <h3 class="text">Electrical and Lighting Work</h3>
-        <p class="desc">
-          When you need electrician V R ENTERPRISES is here to help. Every minute care is taken to hide cable and wire
-          and give a clean and elegant look.
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <div class="service-img four">
-        <div class="box"></div>
-        <h3 class="text">Painting and Finishing</h3>
-        <p class="desc">
-          The tem gives the various option of ENAMEL, LUSTER, PLASTIC PAINT, ROYAL, TEXTURE PAINT and Finish
-          to client and based on choice of client give desired look.
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <div class="service-img five">
-        <div class="box"></div>
-        <h3 class="text">Wall Art Hand Painting</h3>
-        <p class="desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam amet neque quidem, nobis veniam facilis doloribus culpa aliquam nesciunt. Pariatur.
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <div class="service-img six">
-        <div class="box"></div>
-        <h3 class="text">Fire Hydrant System</h3>
-        <p class="desc">
-          The team design keeping in consideration the amenities required to meet all emergency situation in particular
-          organization the re hydrant system.
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <div class="service-img seven">
-        <div class="box"></div>
-        <h3 class="text">Modular Work</h3>
-        <p class="desc">
-          The team based on client based on the modular requirement, make and design modular work which are in
-          accordance to the specific need to please the client both in term of utility and looks.
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <div class="service-img eight">
-        <div class="box"></div>
-        <h3 id="hvac" class="text">HVAC Partitioning and Wall Paneling</h3>
-        <p class="desc">
-          The team has expertise for modular panel for critical and non critical application and look after installation in all
-          the offices and large industrial unit
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <div class="service-img nine">
-        <div class="box"></div>
-        <h3 class="text">Flooring</h3>
-        <p class="desc">
-          Our team fixed all type of flooring vinly flooring, wooden flooring, Italian marble, vitrified flooring, etc. we suggest
-          the flooring that will be best suitable to the particular area.
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <div class="service-img ten">
-        <div class="box"></div>
-        <h3 class="text">Branding</h3>
-        <p class="desc">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt fugiat tempora quos, eos cum aperiam nisi explicabo expedita placeat laboriosam!
-        </p>
-      </div>
-    </div>
+      <% } %>
+    <% }) %>
   </div>
 </div>
 

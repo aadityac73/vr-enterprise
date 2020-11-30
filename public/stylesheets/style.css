@@ -242,6 +242,35 @@ footer .bottom {
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+.title.services {
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1606718862/assets/civil_ylnv5n.jpg) no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.title.portfolio1 {
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1606719826/assets/bg-port_yl4iid.jpg) no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.title.clientele1 {
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1606720213/assets/bg-client_lejyw0.jpg) no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.title.contact1 {
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1606720583/assets/bg-contact_mlulgw.jpg) no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .title {
 	position: relative;
 	width: 100%;
@@ -350,12 +379,34 @@ footer .bottom {
 	right: 3px;
 	left: 3px;
 	border-radius: 50%;
-	background: url(https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80)
-		no-repeat;
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605900951/assets/team/empty_surjli.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
+.our-team .img-border .img.vivek {
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605900064/assets/team/vivek_yjn1mc.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.our-team .img-border .img.abhay {
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605900064/assets/team/abhay_srtvmh.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.our-team .img-border .img.sona {
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605900064/assets/team/sona_ylewhn.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.our-team .img-border .img.dilip {
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1606713608/assets/team/dilip_fqy6wv.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 .our-team .text {
 	margin-top: 14px;
 	padding: 0 10px 0 10px;
@@ -448,60 +499,61 @@ footer .bottom {
 }
 
 .service-img.one {
-	background: url(https://images.unsplash.com/photo-1507086182422-97bd7ca2413b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80)
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605963940/assets/Services/civil_npe1mo.jpg)
 		no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .service-img.two {
-	background: url(https://images.unsplash.com/photo-1595846936289-91371459c5bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605964566/assets/Services/furniture1_eo1d9e.jpg)
 		no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .service-img.three {
-	background: url(https://images.unsplash.com/photo-1596729265256-65efcec497bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605964279/assets/Services/light_f8f7sk.jpg)
 		no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .service-img.four {
-	background: url(https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80)
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605964147/assets/Services/painting_qelsyd.jpg)
 		no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .service-img.five {
-	background: url(https://images.unsplash.com/photo-1520772624093-23a49d9aad17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605964239/assets/Services/wall_zgnaq0.jpg)
 		no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .service-img.six {
-	background: url(https://images.unsplash.com/photo-1551610524-6593c5e2c6fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605963940/assets/Services/fire_khxxip.jpg)
 		no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .service-img.seven {
-	background: url(https://mail.google.com/mail/u/1?ui=2&ik=0eea2819a0&attid=0.5&permmsgid=msg-f:1680989459815387295&th=17541301e778d09f&view=fimg&realattid=175412f4ee0324ce6078&disp=thd&attbid=ANGjdJ9mHeTu7OOKaihmmO6szPEnDbLwLfmE1gK3RbYvzGax-x8-HSwLbjgBPe_ghIVAcPQ_ZRp_v2yL0-T11_cueq1kHZzAOAjQkK2IVB0YpdOw6adlPpj3eAmaHhM&ats=2524608000000&sz=w1024-h667)
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605963994/assets/Services/kitchen_ii2nsf.jpg)
 		no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .service-img.eight {
-	background: url(https://4.imimg.com/data4/NK/JW/MY-11658092/clean-room-partition-and-hvac-500x500.jpg) no-repeat;
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605963940/assets/Services/hvac_aijdex.jpg)
+		no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .service-img.nine {
-	background: url(https://images.unsplash.com/photo-1563724718319-78dc40028132?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80)
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605964373/assets/Services/flooring_ehpktr.jpg)
 		no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 .service-img.ten {
-	background: url(https://mail.google.com/mail/u/1?ui=2&ik=0eea2819a0&attid=0.6&permmsgid=msg-f:1680989207982349125&th=175412c7450d9b45&view=fimg&realattid=175412c1169d373b7a81&disp=thd&attbid=ANGjdJ92q50KTfsIGKrk2dUfhQba03qCaVeUdKBTf4Ohe3IZY3ZKqc_EL_47H_KsEuVNVvgh86clfd4K3H7oopKG7AXURIhH2VvaH8O4l8pIIn057R22Q8NECv124BA&ats=2524608000000&sz=w1024-h667)
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1605964372/assets/Services/branding_czqg9p.jpg)
 		no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -667,6 +719,114 @@ footer .bottom {
 	margin-bottom: 20px;
 }
 
+.contact {
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.contact .form-title {
+	font-size: 1.7em;
+	font-weight: 600;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+.contact .form-group label {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.contact .form-group input[type='number']::-webkit-inner-spin-button,
+.contact .form-group input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+	width: 100%;
+	border-radius: 0;
+	border: 2px solid #4ba414;
+	padding: 4px 5px 4px 6px;
+}
+
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+	outline: none;
+}
+
+.contact .form-btn {
+	color: #fff;
+	background-color: #4ba414;
+	padding: 5px 20px;
+	font-style: italic;
+	text-transform: uppercase;
+	border: none;
+	font-size: 1.25em;
+	letter-spacing: 2px;
+	border: 2px solid #4ba414;
+	transition: all 0.3s ease-in-out;
+}
+
+.contact .form-custom {
+	margin-bottom: 40px;
+}
+
+.contact .form-btn:hover {
+	color: #4ba414;
+	background-color: #fff;
+}
+
+.contact .form-btn:focus {
+	outline: none;
+}
+
+.contact .phone {
+	text-align: center;
+	margin: 40px 0;
+	letter-spacing: 1px;
+}
+
+.contact .phone p {
+	margin: 9px 0;
+}
+
+.contact .phone p a {
+	color: #000;
+}
+
+.contact .phone p a:hover {
+	text-decoration: none;
+}
+
+.contact .info {
+	margin-top: 30px;
+}
+
+.contact .info p {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	letter-spacing: 1px;
+	height: fit-content;
+	margin-bottom: 30px;
+}
+
+.contact .info .address {
+	font-size: .9em;
+}
+
+.contact .map {
+	margin-top: 50px;
+}
+
+.contact .map iframe {
+	width: 100%;
+	height: 400px;
+	filter: grayscale();
+}
+
 @media (max-width: 891px) {
 	body.disabled {
 		overflow: hidden;
@@ -699,6 +859,15 @@ footer .bottom {
 	.navbar .content .menu-list li {
 		margin-top: 17px;
 		padding: 0 0 0 30px;
+	}
+
+	.navbar .content .menu-list li a {
+		display: inline-block;
+		padding: 7px 0 0 0;
+		text-decoration: none;
+		color: #fff;
+		font-size: 12px;
+		letter-spacing: 2px;
 	}
 
 	.navbar .content .menu-list li:hover a {
@@ -874,6 +1043,12 @@ footer .bottom {
 	.service-img.hover .desc {
 		top: 60px;
 		font-size: .8em;
+	}
+
+	.contact .map iframe {
+		width: 100%;
+		height: 300px;
+		filter: grayscale();
 	}
 }
 
