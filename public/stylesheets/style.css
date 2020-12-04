@@ -271,16 +271,16 @@ footer .bottom {
 }
 
 .title.clientele1 {
-	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1606720213/assets/bg-client_lejyw0.jpg) no-repeat;
-	background-position: bottom;
-	background-size: cover;
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1607075078/assets/bg-client_u7z1dt.jpg) no-repeat;
+	background-position: top;
+	background-size: contain;
 	background-attachment: fixed;
 }
 
 .title.contact1 {
-	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1606720583/assets/bg-contact_mlulgw.jpg) no-repeat;
-	background-position: bottom;
-	background-size: cover;
+	background: url(https://res.cloudinary.com/aadityac73/image/upload/v1607075954/assets/bg-contact_p32xvt.jpg) no-repeat;
+	background-position: top;
+	background-size: contain;
 	background-attachment: fixed;
 }
 
