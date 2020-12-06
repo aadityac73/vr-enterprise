@@ -1,52 +1,53 @@
 require('dotenv').config();
-const express = require("express");
-const app = express();
-const bodyParser = require("body-parser");
-const mailer = require('./misc/mailer');
+const express = require("express"),
+  app = express(),
+  bodyParser = require("body-parser"),
+	mongoose = require('mongoose'),
+	passport = require('passport'),
+  LocalStrategy = require('passport-local'),
+  flash = require('connect-flash'),
+	User = require('./models/users');
+	
+const indexRoutes = require('./routes/index');
+const adminRoutes = require('./routes/admin');
 
-const data = require('./misc/content');
+const PORT = process.env.PORT || 3000;
 
-const {images, services, clients} = data;
+const URI = process.env.DATABASEURL || 'mongodb://127.0.0.1:27017/vastu_rachana';
+mongoose.connect(URI, {
+	useNewUrlParser: true,
+	useUnifiedTopology: true
+});
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(flash());
 
-const PORT = process.env.PORT || 3000;
+app.use(
+	require('express-session')({
+		secret: process.env.SESSION_SECRET,
+		resave: false,
+		saveUninitialized: false
+	})
+);
 
-app.get("/", (req, res) => {
-  res.render("index");
+app.use(passport.initialize());
+app.use(passport.session());
+
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+app.use(function(req, res, next) {
+	res.locals.currUser = req.user;
+	res.locals.error = req.flash('error');
+	res.locals.success = req.flash('success');
+	next();
 });
 
-app.get("/about", (req, res) => {
-  res.render("about");
-});
-
-app.get("/services", (req, res) => {
-  res.render("services", {services: services});
-});
-
-app.get("/portfolio", (req, res) => {
-  res.render("portfolio", {images: images});
-});
-
-app.get("/clientele", (req, res) => {
-  res.render("clientele", {clients: clients});
-});
-
-app.get("/contact", (req, res) => {
-  res.render("contact");
-});
-
-app.post("/contact", (req, res) => {
-  const {name, email, phone, message} = req.body.contact;
-  const html = `<h3>New Message from ${name}</h3>
-    ${message}<br/><br/>${name},<br/>${phone},<br/>${email}`;
-
-  mailer.sendEmail('vasturachana007@gmail.com', 'info@vr-enterprise.com', `Enquiry from ${name}`, html);
-  console.log("Email sent successfully!");
-  res.redirect('/contact');
-});
+app.use('/', indexRoutes);
+app.use('/admin', adminRoutes);
 
 app.listen(PORT, () => {
   console.log("Server has started!");

@@ -10,20 +10,20 @@
 <div class="container-fluid">
   <div class="portfolio">
     <div class="row">
-      <% for(var i = 0; i < images.length; i++) { %>
+      <% for(let i = 0; i < images.length; i++) { %>
         <% if(i%5 === 0 || i%5 === 1 || i%5 === 2) { %>
           <div class="col-lg-4 col-md-6 col-sm-6 col-12">
             <div class="image-one">
-              <a href="<%= images[i] %>" data-lightbox="gallary">
-                <img src="<%= images[i] %>" alt="image">
+              <a href="<%= images[i].image %>" data-lightbox="gallary">
+                <img src="<%= images[i].image %>" alt="images[i].caption">
               </a>
             </div>
           </div>
         <% } else { %>
           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="image-two">
-              <a href="<%= images[i] %>" data-lightbox="gallary">
-                <img src="<%= images[i] %>" alt="image">
+              <a href="<%= images[i].image %>" data-lightbox="gallary">
+                <img src="<%= images[i].image %>" alt="images[i].caption">
               </a>
             </div>
           </div>

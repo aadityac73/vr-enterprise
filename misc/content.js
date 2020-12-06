@@ -1,4 +1,6 @@
-const images = ["https://res.cloudinary.com/aadityac73/image/upload/v1606717532/assets/allImages/branding_m0x9lq.jpg",
+const content = {};
+
+content.images = ["https://res.cloudinary.com/aadityac73/image/upload/v1606717532/assets/allImages/branding_m0x9lq.jpg",
 "https://res.cloudinary.com/aadityac73/image/upload/v1606717535/assets/allImages/img1_jg3tud.jpg",
 "https://res.cloudinary.com/aadityac73/image/upload/v1606717538/assets/allImages/img21_echbxn.jpg",
 "https://res.cloudinary.com/aadityac73/image/upload/v1606717539/assets/allImages/img23_zby5r7.jpg",
@@ -24,7 +26,7 @@ const images = ["https://res.cloudinary.com/aadityac73/image/upload/v1606717532/
 "https://res.cloudinary.com/aadityac73/image/upload/v1606717538/assets/allImages/img16_ivxebe.jpg",
 "https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img2_rsogcz.jpg"];
 
-const services = [
+content.services = [
   {
     name: "Civil and Interior",
     class: "one",
@@ -104,7 +106,7 @@ const services = [
   }
 ];
 
-var clients= [
+content.clients= [
   {
     name: "Rare Rabbit",
     logo: "https://res.cloudinary.com/aadityac73/image/upload/v1605608131/assets/logos/rare_rabbit_wijkho.png",
@@ -170,4 +172,4 @@ var clients= [
   },
 ];
 
-module.exports = {images:images, services:services, clients:clients};
+module.exports = content;
