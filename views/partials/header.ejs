@@ -23,14 +23,22 @@
         <div class="icon cancel-btn">
           <i class="fas fa-times"></i>
         </div>
-        <li id="home" class="menu-item"><a href="/">Home</a></li>
-        <li id="about" class="menu-item"><a href="/about">About</a></li>
-        <li id="services" class="menu-item"><a href="/services">Services</a></li>
-        <li id="portfolio" class="menu-item"><a href="/portfolio">Portfolio</a></li>
-        <li id="clientele" class="menu-item"><a href="/clientele">Clientele</a></li>
-        <li id="contact" class="menu-item"><a href="/contact">Contact Us</a></li>
-        <% if(currUser) { %>
-          <li class="menu-item"><a href="/admin/logout">Logout</a></li>
+        <% if(url.includes('admin')) { %>
+          <% if(currUser) { %>
+            <li id="myportfolio" class="menu-item"><a href="/admin/portfolio">Portfolio</a></li>
+            <li id="client" class="menu-item"><a href="/admin/client">Clients</a></li>
+            <li class="menu-item"><a href="/admin/logout">Logout</a></li>
+          <% } else { %>
+            <li id="login" class="menu-item"><a href="/admin">Login</a></li>
+            <li id="register" class="menu-item"><a href="/admin/register">Register</a></li>
+          <% } %>
+        <% } else { %>
+          <li id="home" class="menu-item"><a href="/">Home</a></li>
+          <li id="about" class="menu-item"><a href="/about">About</a></li>
+          <li id="services" class="menu-item"><a href="/services">Services</a></li>
+          <li id="portfolio" class="menu-item"><a href="/portfolio">Portfolio</a></li>
+          <li id="clientele" class="menu-item"><a href="/clientele">Clientele</a></li>
+          <li id="contact" class="menu-item"><a href="/contact">Contact Us</a></li>
         <% } %>
         <div class="nav-social">
           <a href="#"><i class="fab fa-facebook-square"></i></a>

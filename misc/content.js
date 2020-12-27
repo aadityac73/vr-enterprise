@@ -1,30 +1,107 @@
 const content = {};
 
-content.images = ["https://res.cloudinary.com/aadityac73/image/upload/v1606717532/assets/allImages/branding_m0x9lq.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717535/assets/allImages/img1_jg3tud.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717538/assets/allImages/img21_echbxn.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717539/assets/allImages/img23_zby5r7.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717539/assets/allImages/img25_chh2xk.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717539/assets/allImages/img26_woaeby.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717533/assets/allImages/flooring_csdxpz.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717533/assets/allImages/furniture1_cbm0e4.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/furniture2_ygqnyi.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/furniture3_eumjkb.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/furniture4_ubkgm4.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717536/assets/allImages/img7_rgveso.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/gym1_issng3.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/gym2_zngn7m.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717553/assets/allImages/gym3_yzqojt.png",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717535/assets/allImages/gym4_ceceel.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717535/assets/allImages/image_by1ays.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img10_fngmjb.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img11_i84pon.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img12_b4ydis.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img13_mgensg.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img14_ixt7ia.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img15_qesshd.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717538/assets/allImages/img16_ivxebe.jpg",
-"https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img2_rsogcz.jpg"];
+content.images = [
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717532/assets/allImages/branding_m0x9lq.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717535/assets/allImages/img1_jg3tud.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717538/assets/allImages/img21_echbxn.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717539/assets/allImages/img23_zby5r7.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717539/assets/allImages/img25_chh2xk.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717539/assets/allImages/img26_woaeby.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717533/assets/allImages/flooring_csdxpz.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717533/assets/allImages/furniture1_cbm0e4.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/furniture2_ygqnyi.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/furniture3_eumjkb.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/furniture4_ubkgm4.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717536/assets/allImages/img7_rgveso.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/gym1_issng3.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717534/assets/allImages/gym2_zngn7m.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717553/assets/allImages/gym3_yzqojt.png",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717535/assets/allImages/gym4_ceceel.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717535/assets/allImages/image_by1ays.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img10_fngmjb.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img11_i84pon.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img12_b4ydis.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img13_mgensg.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img14_ixt7ia.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img15_qesshd.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717538/assets/allImages/img16_ivxebe.jpg",
+    caption: "" 
+  },
+  {
+    image: "https://res.cloudinary.com/aadityac73/image/upload/v1606717537/assets/allImages/img2_rsogcz.jpg",
+    caption: "" 
+  },
+]
 
 content.services = [
   {

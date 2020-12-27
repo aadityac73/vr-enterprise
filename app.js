@@ -40,6 +40,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.use(function(req, res, next) {
+	res.locals.url = req.url;
 	res.locals.currUser = req.user;
 	res.locals.error = req.flash('error');
 	res.locals.success = req.flash('success');

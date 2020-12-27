@@ -34,7 +34,7 @@ router.route('/register')
                     <h2>${secretToken}</h2> <br/> On following URL <br/>
                     <a href='${URL}'>${URL}</a>`;
   
-      mailer.sendEmail('vasturachana007@gmail.com', 'info@vr-enterprise.com', `Please verify your account!`, html);
+      await mailer.sendEmail('vasturachana007@gmail.com', 'info@vr-enterprise.com', `Please verify your account!`, html);
       req.flash('success', 'Please check your email!');
       return res.redirect('back');
     }

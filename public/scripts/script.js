@@ -71,6 +71,18 @@ else if(loc === '/clientele'){
 else if(loc === '/contact'){
   $('#contact').toggleClass('active')
 }
+else if(loc === '/admin'){
+  $('#login').toggleClass('active')
+}
+else if(loc === '/admin/register'){
+  $('#register').toggleClass('active')
+}
+else if(loc === '/admin/portfolio'){
+  $('#myportfolio').toggleClass('active')
+}
+else if(loc === '/admin/client'){
+  $('#client').toggleClass('active')
+}
 
 (function() {
 	'use strict';

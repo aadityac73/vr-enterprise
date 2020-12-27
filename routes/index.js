@@ -27,7 +27,7 @@ router.get("/portfolio", async (req, res) => {
       req.flash('error', 'Not found any images in portfolio!');
       return res.redirect('back');
     }
-    return res.render("portfolio", {images: myImages});
+    return res.render("portfolio", {images: images});
   } catch(error) {
     req.flash('error', error.message);
     return res.redirect('back');
@@ -41,7 +41,7 @@ router.get("/clientele", async (req, res) => {
       req.flash('error', 'Not found any clients in clientele!');
       return res.redirect('back');
     }
-    return res.render("clientele", {clients: myClients});
+    return res.render("clientele", {clients: clients});
   } catch(error) {
     req.flash('error', error.message);
     return res.redirect('back');
